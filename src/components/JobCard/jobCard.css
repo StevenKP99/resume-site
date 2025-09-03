@@ -1,0 +1,176 @@
+.jobs-carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  max-width: 95%;
+}
+
+.jobs-container{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  min-width: 500px;
+}
+
+.job-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+  padding: 1rem;
+  min-width: 400px;
+  transition: background-color 0.3s ease;
+  scroll-snap-align: start;
+}
+
+.job-card:hover {
+  background-color: var(--color-surface-alt);
+  box-shadow: var(--shadow-hover);
+}
+
+.job-toggle {
+  all: unset;
+  width: 100%;
+  cursor: pointer;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.job-company {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+}
+
+.job-title {
+  font-size: var(--fs-300);
+  color: var(--color-text-muted);
+}
+
+.job-date, .job-worktype {
+  font-size: var(--fs-200);
+  color: var(--color-text-muted);
+}
+
+.job-details {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+/* Controls */
+.jobs-control{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+ .jobs-control button {
+  font-size: var(--fs-500);
+  margin: 0.5rem;
+  background-color: rgba(44, 62, 80, 0.2);
+  color: var(--color-text);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+} 
+
+.jobs-control button:hover {
+  background-color: var(--color-button-hover);
+}
+
+.hidden {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  max-height: 1000px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for phones and small screens */
+  .jobs-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100vw;
+  padding: 0;
+}
+
+.jobs-container {
+  min-width: 100%;
+  scroll-padding-left: 1rem; /* or match your button width */
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  display: flex;
+  scroll-behavior: smooth;
+  gap: 4rem;
+  scroll-padding-left: 2rem;
+    scroll-padding-right: 0.5rem;
+  padding: 0 2rem;
+}
+
+.job-card {
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+}
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.job-info > div{
+  width: 100%;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(44, 62, 80, 0.8);
+  color: white;
+  border: none;
+  width: auto;
+  height: 100%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#prev {
+  left: .001rem;
+}
+
+#next {
+  right: .001rem;
+}
+}

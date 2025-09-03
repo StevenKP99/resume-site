@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steven Puckett</title>
+  </head>
+  <body>
+  <div class="layout">
+    <main role="main">
+      <header class="profile-header" role="banner">
+        <img class="profile-pic" src="src/assets/Avatar2.jpg" alt="Steven Puckett" />
+        <div class="profile-info">
+          <h1>Steven Puckett</h1>
+          <p class="subtitle">Software Engineer</p>    
+        </div>
+        <a href="/assets/Steven-Puckett-Resume.pdf" download class="download-button">Download Resume</a>
+      </header>
+    <section id="experience" role="region" aria-labelledby="experience-heading">
+      <div class="section-header">
+        <img class="section-image" src="src/assets/experience-hex.jpg" alt="Skills Image">
+                <div class="section-heading">
+          <h2 id="experience-heading">Experience</h2>
+        </div>        
+      </div>      
+      <div class="section-content work-experience">        
+      </div>
+    </section>
+
+    <section id="skills" role="region" class="flipped" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <img class="section-image" src="src/assets/skills.png" alt="Skills Image">
+        <div class="section-heading">
+          <h2 id="skills-heading" >Skills</h2>
+        </div>
+      </div>
+      <div class="section-content">
+        <ul>
+          <li>
+            <h4>Languages & Frameworks:</h4>
+            <p>C#, .NET Core, ASP.NET Core, Web API, Blazor, HTML, CSS, JavaScript, Java, JSP</p>
+          </li>
+          <li>
+            <h4>Databases & Tools:</h4>
+            <p>SQL Server, Entity Framework Core, Dapper, Hibernate</p>
+          </li>
+          <li>
+            <h4>DevOps & Version Control:</h4>
+            <p>Azure DevOps, CI/CD Pipelines, Git (branching, code reviews)</p>
+          </li>
+          <li>
+            <h4>Methodologies:</h4>
+            <p>Agile Development, Clean Architecture, Domain-Driven Design, Mediator Pattern</p>
+          </li>
+          <li>
+            <h4>Other:</h4>
+            <p>PowerAutomate, RESTful APIs, Team Collaboration, Mentorship</p>
+          </li>
+          <li>
+            <h4>Soft Skills:</h4>
+            <p>Eager learner, clear communicator, collaborative problem-solver</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" role="region" aria-labelledby="education-heading">
+      <div class="section-header">
+        <img class="section-image" src="src/assets/diploma.png" alt="Skills Image">
+        <div class="section-heading">
+          <h2 id="education-heading">Education</h2>
+        </div>
+      </div>
+      <div class="section-content">
+        <ul>
+          <li>        <h4>Bachelor of Science in Computer Science</h4>
+        <p>University of Oklahoma</p></li>
+          <li>        <h4>Associate of Computer Engineering</h4>
+        <p>Tulsa Community College</p></li>
+          <li>        <h4>Associate of Electrical Engineering</h4>
+        <p>Tulsa Community College</p></li>
+        </ul>
+
+
+
+      </div>
+    </section>
+    </main>
+    <aside class="side-menu" role="navigation" aria-label="Section Navigation">
+      <ul>
+        <li>
+          <a href="#experience">
+            <img src="/src/assets/briefcase.svg" alt="Experience" />
+            <span class="mobile-hidden">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <img src="/src/assets/tools.svg" alt="Skills" />
+            <span class="mobile-hidden">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education">
+            <img src="/src/assets/education.svg" alt="Education" />
+            <span class="mobile-hidden">Education</span>
+          </a>
+        </li>
+      </ul>
+    </aside>  
+  </div>  
+  <script type="module" src="/main.js"></script>
+  </body>
+</html>

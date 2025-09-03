@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pcna",
+    "company": "PCNA",
+    "title": "Software Engineer",
+    "date": "Feb 2025 – Aug 2025",
+    "workType": "Contract",
+    "details": [
+      "Developed in-house Blazor web applications using C#, .NET Core, and SQL Server, delivering intuitive solutions to support critical business needs.",
+      "Debugged and optimized stored procedures for B2B data pipelines, ensuring reliable data flow for consumer product websites.",
+      "Collaborated with cross-functional teams to implement feature enhancements, improving user experience and operational efficiency."
+    ]
+  },
+  {
+    "id": "wirebrain",
+    "company": "WireBrain",
+    "title": "Software Engineer",
+    "date": "Oct 2022 – Jun 2024",
+    "workType": "Part & Full Time",
+    "details": [
+      "Modernized Blazor Server UI with clean, user-friendly layouts, enhancing visual flow and usability for internal business processes.",
+      "Built and maintained backend APIs using C#, ASP.NET Core, and Web API, exceeding client requirements and improving platform scalability.",
+      "Implemented CI/CD pipelines with Azure DevOps and Git branching strategies, reducing bugs and streamlining agile development sprints."
+    ]
+  },
+  {
+    "id": "connectship",
+    "company": "ConnectShip",
+    "title": "Software Engineer",
+    "date": "Oct 2019 – Oct 2022",
+    "workType": "Full Time",
+    "details": [
+      "Developed and enhanced Transportation and Logistics software using C#, .NET, and Python, integrating new carrier support to improve platform functionality.",
+      "Built and maintained APIs to support seamless data exchange for logistics applications, ensuring robust backend services.",
+      "Collaborated in agile team settings, participating in code reviews and brainstorming sessions to resolve complex issues."
+    ]
+  },
+  {
+    "id": "executime",
+    "company": "Executime",
+    "title": "Software Developer",
+    "date": "May 2012 – Oct 2019",
+    "workType": "Full Time",
+    "details": [
+      "Performed full-stack development using Java, JSP, and SQL, delivering scalable applications for hours reporting tailored to client needs.",
+      "Optimized application performance by addressing bottlenecks in SQL queries and backend logic, improving user experience.",
+      "Mentored new hires, promoting best practices and fostering a collaborative team environment."
+    ]
+  }
+]

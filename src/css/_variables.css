@@ -1,0 +1,37 @@
+:root {
+  /* Base Colors */
+  --color-bg: #1e1e1e;              /* Main background */
+  --color-surface: #2a2a2a;         /* Card background */
+  --color-surface-alt: #333;        /* Slightly darker/lighter variant */
+  --color-header: #121212;          /* Header bar or nav background */
+  --color-border: #444;             /* Subtle borders or dividers */
+
+  /* Text Colors */
+  --color-text: #e0e0e0;            /* Primary text */
+  --color-text-muted: #aaa;         /* Secondary text */
+  --color-link: #4ea1ff;            /* Hyperlinks */
+  --color-link-hover: #82c4ff;      /* Hover state */
+
+  /* Accent Colors */
+  --color-accent: #00bfa5;          /* Buttons, highlights */
+  --color-accent-hover: #1de9b6;    /* Hover state for accents */
+
+  --color-button: rgba(44, 62, 80, 0.2);
+  --color-button-hover: rgba(44, 62, 80, 0.5);
+  /* Shadows & Effects */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.6);
+
+  /* Font Style */
+  --ff-base: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  --fw-regular: 300;
+  --fw-bold: 700;
+
+  --fs-200: 0.875rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 3.25rem;
+}
