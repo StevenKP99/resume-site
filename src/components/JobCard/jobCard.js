@@ -79,10 +79,6 @@ function addScrollBy(containerSelector) {
 }
 
 function renderWheelController(id, text){
-  // const workController = document.createElement('div');
-  // workController.className = 'jobs-control';
-  // workController.ariaLabel = `${id} button`;
-  // workController.innerHTML = `<button id="${id}" class="carousel-nav">${text}</button>`
   const workController = document.createElement('button');
   workController.id = id;
   workController.ariaLabel = `${id} button`;
