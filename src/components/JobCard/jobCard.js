@@ -16,7 +16,7 @@ export function renderJobCards(containerSelector) {
     const card = document.createElement('div');
     card.className = 'job-card';
     card.innerHTML = `
-      <button class="job-toggle" aria-expanded="false" aria-controls="job-details-${job.id}">
+      <button class="job-toggle" aria-expanded="false" aria-controls="job-details-${job.id}" aria-label="Toggle all job details">
         <div class="job-header">
           <div class="job-info">
             <div>
@@ -43,17 +43,33 @@ export function renderJobCards(containerSelector) {
   }
 
   container.appendChild(jobscarousel);
+
+  let allExpanded = false;
+
   jobscarousel.addEventListener('click', e => {
     if (e.target.closest('.job-toggle')) {
-      const button = e.target.closest('.job-toggle');
-      const detailsId = button.getAttribute('aria-controls');
-      const details = document.getElementById(detailsId);
-      const expanded = button.getAttribute('aria-expanded') === 'true';
+      // Toggle the global state
+      allExpanded = !allExpanded;
 
-      button.setAttribute('aria-expanded', !expanded);
-      details.setAttribute('aria-hidden', expanded);
-      details.classList.toggle('hidden');
-      details.classList.toggle('visible');
+      // Get all toggle buttons and details sections
+      const allButtons = jobscarousel.querySelectorAll('.job-toggle');
+      const allDetails = jobscarousel.querySelectorAll('.job-details');
+
+      // Update ALL cards to match the new global state
+      allButtons.forEach(button => {
+        button.setAttribute('aria-expanded', allExpanded);
+      });
+
+      allDetails.forEach(details => {
+        details.setAttribute('aria-hidden', !allExpanded);
+        if (allExpanded) {
+          details.classList.remove('hidden');
+          details.classList.add('visible');
+        } else {
+          details.classList.remove('visible');
+          details.classList.add('hidden');
+        }
+      });
     }
   });
 

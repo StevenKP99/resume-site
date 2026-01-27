@@ -1,15 +1,22 @@
 [
   {
-    "id": "contract-work",
-    "company": "Contract Work",
+    "id": "quiktrip",
+    "company": "Quiktrip",
     "title": "Software Engineer (Contract)",
-    "date": "Feb 2025 – Present",
+    "date": "Sep 2025 – Present",
     "workType": "Contract",
     "details": [
-      "Quiktrip",
       "Designed and implemented KitchenService, a critical event-driven microservice for real-time order updating and tracking across kitchen hardware devices in a major POS system upgrade; Given full responsibility and decision making for completing service reliably and in timely manner.",
-      "Aided with adoption of Blazor component architecture and Flux state management patterns by mentoring and teaching team members, accelerating feature development and improving code consistency on a wrapped Blazor frontend.",
-      "PCNA",
+      "Aided with adoption of Blazor component architecture and Flux state management patterns by mentoring and teaching team members, accelerating feature development and improving code consistency on a wrapped Blazor frontend."
+    ]
+  },
+  {
+    "id": "pcna",
+    "company": "PCNA",
+    "title": "Software Engineer (Contract)",
+    "date": "Feb 2025 – Aug 2025",
+    "workType": "Contract",
+    "details": [
       "Developed and maintained intuitive Blazor web applications using C#/.NET Core and SQL Server to address key internal business requirements, delivering user-friendly tools that enhanced productivity for cross￾functional stakeholders.",
       "Optimized and debugged complex stored procedures in high-volume B2B data pipelines, ensuring reliable, high-throughput data flow to consumer-facing product websites and reducing processing errors.",
       "Partnered with operations teams to prioritize and implement feature enhancements, resulting in measurable gains in user experience and operational throughput."
@@ -20,7 +27,7 @@
     "company": "WireBrain",
     "title": "Software Engineer",
     "date": "Oct 2022 – Jun 2024",
-    "workType": "Part & Full Time",
+    "workType": "Full Time",
     "details": [
       "Modernized legacy internal business UI by migrating to clean, responsive Blazor Server layouts; significantly improved visual hierarchy, navigation flow, and overall usability for end-users handling core processes.",
       "Architected and maintained scalable backend RESTful APIs with C#, ASP.NET Core, and Web API; delivered solutions that exceeded client expectations and supported future platform growth.",
