@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Languages & Frameworks",
+        "technologies": ["C#", ".NET Core", "ASP.NET Core", "Web API", "Blazor", "HTML", "CSS", "JavaScript", "Java", "JSP"]
+    },
+    {
+        "category": "Databases & Tools",
+        "technologies": ["SQL Server", "Entity Framework Core", "Dapper", "Hibernate"]
+    },
+    {
+        "category": "DevOps & Version Control",
+        "technologies": ["Azure DevOps", "CI/CD Pipelines", "Git (branching, code reviews)"]
+    },
+    {
+        "category": "Methodologies",
+        "technologies": ["Agile Development", "Clean Architecture", "Domain-Driven Design", "Mediator Pattern"]
+    },
+    {
+        "category": "Other",
+        "technologies": ["PowerAutomate", "RESTful APIs", "Team Collaboration", "Mentorship"]
+    },
+    {
+        "category": "Soft Skills",
+        "technologies": ["Eager learner", "Clear communicator", "Collaborative problem-solver"]
+    }
+]

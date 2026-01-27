@@ -1,14 +1,18 @@
 [
   {
-    "id": "pcna",
-    "company": "PCNA",
-    "title": "Software Engineer",
-    "date": "Feb 2025 – Aug 2025",
+    "id": "contract-work",
+    "company": "Contract Work",
+    "title": "Software Engineer (Contract)",
+    "date": "Feb 2025 – Present",
     "workType": "Contract",
     "details": [
-      "Developed in-house Blazor web applications using C#, .NET Core, and SQL Server, delivering intuitive solutions to support critical business needs.",
-      "Debugged and optimized stored procedures for B2B data pipelines, ensuring reliable data flow for consumer product websites.",
-      "Collaborated with cross-functional teams to implement feature enhancements, improving user experience and operational efficiency."
+      "Quiktrip",
+      "Designed and implemented KitchenService, a critical event-driven microservice for real-time order updating and tracking across kitchen hardware devices in a major POS system upgrade; Given full responsibility and decision making for completing service reliably and in timely manner.",
+      "Aided with adoption of Blazor component architecture and Flux state management patterns by mentoring and teaching team members, accelerating feature development and improving code consistency on a wrapped Blazor frontend.",
+      "PCNA",
+      "Developed and maintained intuitive Blazor web applications using C#/.NET Core and SQL Server to address key internal business requirements, delivering user-friendly tools that enhanced productivity for cross￾functional stakeholders.",
+      "Optimized and debugged complex stored procedures in high-volume B2B data pipelines, ensuring reliable, high-throughput data flow to consumer-facing product websites and reducing processing errors.",
+      "Partnered with operations teams to prioritize and implement feature enhancements, resulting in measurable gains in user experience and operational throughput."
     ]
   },
   {
@@ -18,9 +22,9 @@
     "date": "Oct 2022 – Jun 2024",
     "workType": "Part & Full Time",
     "details": [
-      "Modernized Blazor Server UI with clean, user-friendly layouts, enhancing visual flow and usability for internal business processes.",
-      "Built and maintained backend APIs using C#, ASP.NET Core, and Web API, exceeding client requirements and improving platform scalability.",
-      "Implemented CI/CD pipelines with Azure DevOps and Git branching strategies, reducing bugs and streamlining agile development sprints."
+      "Modernized legacy internal business UI by migrating to clean, responsive Blazor Server layouts; significantly improved visual hierarchy, navigation flow, and overall usability for end-users handling core processes.",
+      "Architected and maintained scalable backend RESTful APIs with C#, ASP.NET Core, and Web API; delivered solutions that exceeded client expectations and supported future platform growth.",
+      "Established modern CI/CD pipelines using Azure DevOps along with effective Git branching and code review strategies; reduced deployment-related bugs and shortened agile sprint cycles."
     ]
   },
   {
@@ -30,9 +34,9 @@
     "date": "Oct 2019 – Oct 2022",
     "workType": "Full Time",
     "details": [
-      "Developed and enhanced Transportation and Logistics software using C#, .NET, and Python, integrating new carrier support to improve platform functionality.",
-      "Built and maintained APIs to support seamless data exchange for logistics applications, ensuring robust backend services.",
-      "Collaborated in agile team settings, participating in code reviews and brainstorming sessions to resolve complex issues."
+      "Enhanced transportation and logistics platform by developing new carrier integrations and supporting features in C#/.NET and Python; expanded platform capabilities and improved shipment handling reliability for clients.",
+      "Designed and supported robust APIs enabling seamless, real-time data exchange between logistics systems and external partners.",
+      "Actively contributed to agile ceremonies, including detailed code reviews and collaborative problem-solving sessions, to resolve complex integration and performance challenges."
     ]
   },
   {
@@ -42,9 +46,9 @@
     "date": "May 2012 – Oct 2019",
     "workType": "Full Time",
     "details": [
-      "Performed full-stack development using Java, JSP, and SQL, delivering scalable applications for hours reporting tailored to client needs.",
-      "Optimized application performance by addressing bottlenecks in SQL queries and backend logic, improving user experience.",
-      "Mentored new hires, promoting best practices and fostering a collaborative team environment."
+      "Delivered full-stack hours-reporting applications using Java, JSP, and SQL; customized scalable solutions to meet diverse client specifications and reporting needs.",
+      "Identified and resolved key performance bottlenecks in SQL queries and backend business logic; achieved noticeable improvements in application response times and user satisfaction.",
+      "Mentored junior developers and new hires on coding best practices, architecture patterns, and team collaboration standards, helping build a stronger, more efficient engineering culture."
     ]
   }
 ]
