@@ -1,9 +1,25 @@
-import jobs from './jobs.json';
+import resume from '../../../data/resume.json';
+
+function formatDateRange(startDate, endDate) {
+  const formatDate = (dateStr) => {
+    if (!dateStr) return 'Present';
+    const [year, month] = dateStr.split('-');
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return month ? `${months[parseInt(month, 10) - 1]} ${year}` : year;
+  };
+  return `${formatDate(startDate)} – ${formatDate(endDate)}`;
+}
+
+function deriveWorkType(position) {
+  if (position.toLowerCase().includes('contract')) return 'Contract';
+  return 'Full Time';
+}
 
 export function renderJobCards(containerSelector) {
   const container = document.querySelector(containerSelector);
   const jobscarousel = document.createElement('div');
   jobscarousel.className = 'jobs-carousel';
+  const jobs = resume.work;
   if(jobs.length > 0){
      //const prev = renderWheelController('prev', '←')
      const prev = renderWheelController('prev', '<')
@@ -12,26 +28,27 @@ export function renderJobCards(containerSelector) {
   const jobsContainer = document.createElement('div');
   jobsContainer.className = 'jobs-container'
   jobscarousel.appendChild(jobsContainer);
-  jobs.forEach(job => {
+  jobs.forEach((job, index) => {
     const card = document.createElement('div');
     card.className = 'job-card';
+    const jobId = job.name.toLowerCase().replace(/\s+/g, '-');
     card.innerHTML = `
-      <button class="job-toggle" aria-expanded="false" aria-controls="job-details-${job.id}" aria-label="Toggle all job details">
+      <button class="job-toggle" aria-expanded="false" aria-controls="job-details-${jobId}" aria-label="Toggle all job details">
         <div class="job-header">
           <div class="job-info">
             <div>
-              <div class="job-company">${job.company}</div>
-              <div class="job-date">${job.date}</div>
+              <div class="job-company">${job.name}</div>
+              <div class="job-date">${formatDateRange(job.startDate, job.endDate)}</div>
             </div>
             <div>
-              <div class="job-title">${job.title}</div>
-              <div class="job-worktype">${job.workType}</div>
+              <div class="job-title">${job.position}</div>
+              <div class="job-worktype">${deriveWorkType(job.position)}</div>
             </div>
           </div>
         </div>
       </button>
-      <ul id="job-details-${job.id}" class="job-details hidden" aria-hidden="true">
-        ${job.details.map(detail => `<li>${detail}</li>`).join('')}
+      <ul id="job-details-${jobId}" class="job-details hidden" aria-hidden="true">
+        ${job.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
       </ul>
     `;
     jobsContainer.appendChild(card);
