@@ -21,7 +21,6 @@ export function renderJobCards(containerSelector) {
   jobscarousel.className = 'jobs-carousel';
   const jobs = resume.work;
   if(jobs.length > 0){
-     //const prev = renderWheelController('prev', '←')
      const prev = renderWheelController('prev', '<')
      jobscarousel.appendChild(prev);
   }

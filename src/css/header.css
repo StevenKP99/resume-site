@@ -69,6 +69,23 @@ svg:hover {
   transition: fill 0.3s ease;
 }
 
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.nav-link:hover {
+  background-color: var(--color-accent-hover);
+}
+
 @media only screen and (max-width: 600px) {
 .profile-header{
   flex-direction: column;
