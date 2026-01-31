@@ -5,10 +5,22 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "npm run build:resume && vite build",
+    "preview": "vite preview",
+    "build:resume": "npm run build:resume:pdf && npm run build:resume:docx",
+    "build:resume:html": "resumed render data/resume.json -o public/StevenPuckettSoftwareEngineer.html -t jsonresume-theme-even",
+    "build:resume:pdf": "resumed export data/resume.json -o public/StevenPuckettSoftwareEngineer.pdf -t jsonresume-theme-even",
+    "build:resume:docx": "node scripts/generate-docx.js"
   },
   "devDependencies": {
+    "docx": "^9.5.1",
+    "jsonresume-theme-actual": "^0.2.2",
+    "jsonresume-theme-class": "^0.1.2",
+    "jsonresume-theme-even": "^0.26.1",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-stackoverflow": "^2.1.0",
+    "puppeteer": "^24.36.1",
+    "resumed": "^6.1.0",
     "vite": "^7.1.2"
   }
 }
