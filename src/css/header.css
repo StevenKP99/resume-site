@@ -69,6 +69,104 @@ svg:hover {
   transition: fill 0.3s ease;
 }
 
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.nav-link:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Download Dropdown */
+.download-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.dropdown-toggle svg {
+  transition: transform 0.2s ease;
+}
+
+.download-dropdown:hover .dropdown-toggle svg,
+.download-dropdown:focus-within .dropdown-toggle svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.25rem;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 100;
+  min-width: 160px;
+}
+
+.download-dropdown:hover .dropdown-menu,
+.download-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.15s ease;
+}
+
+.dropdown-menu a svg {
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.dropdown-menu a:hover svg {
+  opacity: 1;
+}
+
+.dropdown-menu a:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.dropdown-menu a:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
 .profile-header{
   flex-direction: column;

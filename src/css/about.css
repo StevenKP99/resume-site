@@ -1,0 +1,64 @@
+.about-content {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.about-summary p {
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.about-contact ul,
+.about-profiles ul,
+.about-interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-contact li,
+.about-profiles li,
+.about-interests li {
+  padding: 0.5rem 0;
+  color: var(--color-text);
+}
+
+.about-contact a,
+.about-profiles a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.about-contact a:hover,
+.about-profiles a:hover {
+  text-decoration: underline;
+}
+
+.about-content h3 {
+  font-size: var(--fs-500);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.5rem;
+}
+
+.about-content h4 {
+  font-size: var(--fs-400);
+  color: var(--color-text-muted);
+  margin: 0.5rem 0;
+}
+
+.interest-group {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-summary {
+    grid-column: 1 / -1;
+  }
+}

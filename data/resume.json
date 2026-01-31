@@ -1,0 +1,147 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Steven Puckett",
+    "label": "Software Engineer",
+    "email": "steven.k.puckett24@gmail.com",
+    "phone": "(918) 230-6879",
+    "summary": "Motivated Software Engineer with a strong foundation in C#, .NET Core, and web development, eager to contribute to innovative software solutions in a dynamic, collaborative environment. Passionate about building intuitive, user-friendly tools that enhance functionality and user experience, while continuously growing technical skills in an agile setting.",
+    "location": {
+      "city": "Tulsa",
+      "region": "OK",
+      "postalCode": "",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "stevenpuckett1",
+        "url": "https://www.linkedin.com/in/stevenpuckett1"
+      },
+      {
+        "network": "GitHub",
+        "username": "StevenKP99",
+        "url": "https://github.com/StevenKP99"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "QuikTrip",
+      "position": "Software Engineer (Contract)",
+      "startDate": "2025-09",
+      "summary": "Contract software engineering role focused on POS system development and Blazor frontend architecture.",
+      "highlights": [
+        "Designed and implemented KitchenService, a critical event-driven microservice for real-time order updating and tracking across kitchen hardware devices in a major POS system upgrade; Given full responsibility and decision making for completing service reliably and in timely manner.",
+        "Aided with adoption of Blazor component architecture and Flux state management patterns by mentoring and teaching team members, accelerating feature development and improving code consistency on a wrapped Blazor frontend."
+      ]
+    },
+    {
+      "name": "PCNA",
+      "position": "Software Engineer (Contract)",
+      "startDate": "2025-02",
+      "endDate": "2025-08",
+      "summary": "Contract software engineering role developing internal business applications and optimizing data pipelines.",
+      "highlights": [
+        "Developed and maintained intuitive Blazor web applications using C#/.NET Core and SQL Server to address key internal business requirements, delivering user-friendly tools that enhanced productivity for cross-functional stakeholders.",
+        "Optimized and debugged complex stored procedures in high-volume B2B data pipelines, ensuring reliable, high-throughput data flow to consumer-facing product websites and reducing processing errors.",
+        "Partnered with operations teams to prioritize and implement feature enhancements, resulting in measurable gains in user experience and operational throughput."
+      ]
+    },
+    {
+      "name": "WireBrain",
+      "position": "Software Engineer",
+      "startDate": "2022-10",
+      "endDate": "2024-06",
+      "summary": "Full-time software engineering role focused on modernizing legacy systems and establishing DevOps practices.",
+      "highlights": [
+        "Modernized legacy internal business UI by migrating to clean, responsive Blazor Server layouts; significantly improved visual hierarchy, navigation flow, and overall usability for end-users handling core processes.",
+        "Architected and maintained scalable backend RESTful APIs with C#, ASP.NET Core, and Web API; delivered solutions that exceeded client expectations and supported future platform growth.",
+        "Established modern CI/CD pipelines using Azure DevOps along with effective Git branching and code review strategies; reduced deployment-related bugs and shortened agile sprint cycles."
+      ]
+    },
+    {
+      "name": "ConnectShip",
+      "position": "Software Engineer",
+      "startDate": "2019-10",
+      "endDate": "2022-10",
+      "summary": "Full-time software engineering role developing transportation and logistics platform features.",
+      "highlights": [
+        "Enhanced transportation and logistics platform by developing new carrier integrations and supporting features in C#/.NET and Python; expanded platform capabilities and improved shipment handling reliability for clients.",
+        "Designed and supported robust APIs enabling seamless, real-time data exchange between logistics systems and external partners.",
+        "Actively contributed to agile ceremonies, including detailed code reviews and collaborative problem-solving sessions, to resolve complex integration and performance challenges."
+      ]
+    },
+    {
+      "name": "Executime",
+      "position": "Software Developer",
+      "startDate": "2012-05",
+      "endDate": "2019-10",
+      "summary": "Full-time software development role building full-stack hours-reporting applications.",
+      "highlights": [
+        "Delivered full-stack hours-reporting applications using Java, JSP, and SQL; customized scalable solutions to meet diverse client specifications and reporting needs.",
+        "Identified and resolved key performance bottlenecks in SQL queries and backend business logic; achieved noticeable improvements in application response times and user satisfaction.",
+        "Mentored junior developers and new hires on coding best practices, architecture patterns, and team collaboration standards, helping build a stronger, more efficient engineering culture."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Oklahoma, Norman, OK",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2007",
+      "endDate": "2012"
+    },
+    {
+      "institution": "Tulsa Community College",
+      "area": "Computer Engineering",
+      "studyType": "Associate"
+    },
+    {
+      "institution": "Tulsa Community College",
+      "area": "Electrical Engineering",
+      "studyType": "Associate"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages & Frameworks",
+      "keywords": ["C#", ".NET Core", "ASP.NET Core", "Web API", "Blazor", "HTML", "CSS", "JavaScript", "Java", "JSP"]
+    },
+    {
+      "name": "Databases & Tools",
+      "keywords": ["SQL Server", "Entity Framework Core", "Dapper", "Hibernate"]
+    },
+    {
+      "name": "DevOps & Version Control",
+      "keywords": ["Azure DevOps", "CI/CD Pipelines", "Git (branching, code reviews)"]
+    },
+    {
+      "name": "Methodologies",
+      "keywords": ["Agile Development", "Clean Architecture", "Domain-Driven Design", "Mediator Pattern"]
+    },
+    {
+      "name": "Other",
+      "keywords": ["PowerAutomate", "RESTful APIs", "Team Collaboration", "Mentorship"]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": ["Eager learner", "Clear communicator", "Collaborative problem-solver"]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Professional Interests",
+      "keywords": ["Team-focused environments", "Mission-driven development", "Delivering impactful solutions"]
+    },
+    {
+      "name": "Additional Information",
+      "keywords": ["Authorized to work in the U.S. without sponsorship", "Reside greater Tulsa area"]
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "lastModified": "2025-09-01"
+  }
+}

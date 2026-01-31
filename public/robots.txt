@@ -1,0 +1,5 @@
+# robots.txt for spuckett.com
+User-agent: *
+Allow: /
+
+Sitemap: https://spuckett.com/sitemap.xml

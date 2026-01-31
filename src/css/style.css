@@ -3,4 +3,5 @@
 @import '/src/css/header.css';
 @import '/src/css/layout.css';
 @import '/src/css/section.css';
+@import '/src/css/about.css';
 @import '/src/components/JobCard/jobCard.css'
